@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WebsidiaAI - Coming Soon</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f7f7f7;
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      text-align: center;
+    }
+    h1 {
+      font-size: 4rem;
+      margin-top: 5rem;
+      font-weight: 600;
+      background-image: linear-gradient(to right, #0f9d58, #4285f4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: typing 2s steps(20), blink 0.5s step-end infinite;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 3px solid;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+    @keyframes blink {
+      from, to { border-color: transparent; }
+      50% { border-color: #fff; }
+    }
+    h1 span {
+      font-weight: 400;
+    }
+    p {
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      font-weight: 400;
+      line-height: 1.6;
+    }
+    .logo {
+      margin-top: 3rem;
+      display: inline-block;
+      width: 120px;
+      height: 120px;
+      background-image: url('logo.png');
+      background-size: cover;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    }
+    .footer {
+      margin-top: 5rem;
+      font-size: 1.2rem;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-robot" viewBox="0 0 16 16">
+      <path d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5ZM3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.58 26.58 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.933.933 0 0 1-.765.935c-.845.147-2.34.346-4.235.346-1.895 0-3.39-.2-4.235-.346A.933.933 0 0 1 3 9.219V8.062Zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a24.767 24.767 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25.286 25.286 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135Z"/>
+      <path d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2V1.866ZM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5Z"/>
+    </svg>
+  </div>
+  <h1>Websidia<span>AI </span> </h1>
+  <p>Introducing the most advanced AI assistant for your personal and professional life.<br /> </p>
+  <p>Get ready to experience the future of artificial intelligence. Coming soon!</p>
+  <div class="footer">
+    &copy; 2023 Websidia Technologies. All rights reserved.
+  </div>
+
+  <script>
+    const words = ['Revolutionizing', 'Innovating', 'Changing', 'Improving'];
+    const wordIndex = Math.floor(Math.random() * words.length);
+    const word = words[wordIndex];
+    const span = document.createElement('span');
+    span.innerText = word;
+    const typing = document.querySelector('h1');
+    typing.appendChild(span);
+  </script>
+</body>
+</html>
