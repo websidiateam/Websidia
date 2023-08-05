@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 /* ------------------ General CSS ------------------ */
 body {
     color: #656565;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: #ffffff;
 }
 
@@ -30,8 +31,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
     color: #353535;
     margin: 0 0 15px 0;
     padding: 0;
@@ -293,7 +294,7 @@ h6 {
     display: inline-block;
     padding: 0 8px 10px 8px;
     color: #ffffff;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 14px;
     text-transform: uppercase;
